@@ -12,5 +12,5 @@ This project shows ...
 
 ### Design Achievements
 - **Used the Bubblegum Sans font from google font**: I used bubblegum Sans as the font for my site.
-- **Created a color palette on color.adobe ![image](https://user-images.githubusercontent.com/73271208/131231630-9ef8df77-09c5-492a-a5e5-d563e57c1ebf.png)
+- **Created a color palette on color.adobe**: Really just ruined any form of cohession or design on my site with random color placement ![image](https://user-images.githubusercontent.com/73271208/131231630-9ef8df77-09c5-492a-a5e5-d563e57c1ebf.png)
 
