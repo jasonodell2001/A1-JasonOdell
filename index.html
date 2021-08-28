@@ -8,6 +8,23 @@
       rel="stylesheet"
     />
     <style>
+      #pain {
+        color: black;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        color: black;
+      }
+
       body {
         font-family: "Bubblegum Sans", sans-serif;
         font-size: 20px;
@@ -37,8 +54,8 @@
       Science.
     </p>
     <p>
-      I am also the competitive manager for the League of Legends team at WPI as
-      well as the events coordinator for
+      I am the competitive manager for the League of Legends team at WPI as well
+      as the events coordinator for
       <a href="https://wpiesports.github.io/">WPI esports</a>
     </p>
 
@@ -102,5 +119,47 @@
       src="https://i.kym-cdn.com/entries/icons/original/000/018/929/graphic_design_is_my_passion.png"
       alt="Graphic_Design"
     />
+    <h3>
+      Contacts
+    </h3>
+    <table>
+      <tr>
+        <th>Discord</th>
+        <th>uginghostdragon#6818</th>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <th>jdodell@wpi.edu</th>
+      </tr>
+      <tr>
+        <th>github</th>
+        <th><a href="https://github.com/jasonodell2001">jasonodell2001</a></th>
+      </tr>
+    </table>
+
+    <p id="pain">
+      Forgive me...
+    </p>
+    <button id = "sad" onclick="changeColor()">Forgive me for what I have done</button>
+    <script>
+      function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+      async function changeColor() {
+        var elem = document.getElementById("pain");
+        var elem2 = document.getElementById("sad");
+        elem.style.color = 'red';
+        elem2.style.color = 'blue';
+        let x = 0;
+        let y = 0;
+        for(let i = 0; i < 10; i++){
+          y = Math.random() * 500;
+          x = Math.random() * 500;
+          elem.style.width = x + 'px'; 
+          elem2.style.width = y + 'px';
+          await sleep(1000);
+        }
+      }
+    </script>
   </body>
 </html>
