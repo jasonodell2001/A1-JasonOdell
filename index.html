@@ -140,24 +140,28 @@
     <p id="pain">
       Forgive me...
     </p>
-    <button id = "sad" onclick="changeColor()">Forgive me for what I have done</button>
+    <button id="sad" onclick="changeColor()">
+      Forgive me for what I have done
+    </button>
     <script>
       function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
       async function changeColor() {
         var elem = document.getElementById("pain");
         var elem2 = document.getElementById("sad");
-        elem.style.color = 'red';
-        elem2.style.color = 'blue';
+        elem.style.color = "red";
+        elem2.style.color = "blue";
         let x = 0;
         let y = 0;
-        for(let i = 0; i < 10; i++){
+        for (let i = 0; i < 10; i++) {
           y = Math.random() * 500;
           x = Math.random() * 500;
-          elem.style.width = x + 'px'; 
-          elem2.style.width = y + 'px';
-          await sleep(1000);
+          elem.style.width = x + "px";
+          elem.style.height = y + "px";
+          elem.style.height = x + "px";
+          elem2.style.width = y + "px";
+          await sleep(500);
         }
       }
     </script>
