@@ -3,7 +3,7 @@
 Jason Odell
 https://a1-jasonodell2001.glitch.me
 
-This project shows ...
+This project shows some basic information about me as well as some technical and design achievements. 
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, body, li, h2, table, td, th and ID #pain selectors...
